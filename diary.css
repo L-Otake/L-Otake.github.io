@@ -1,0 +1,112 @@
+*{margin: 0; padding: 0; box-sizing: border-box; overflow: auto;}
+/* 底板 */
+body{height: 100vh;width: 100vw;}
+/* 页面 */
+
+
+
+
+
+
+
+
+
+
+
+
+aside{
+	height: 100vh;
+	width: 100vw;
+	background-color: #766b46;
+	position: relative;
+	/* 居中模块 */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* 用户-游客（外） */
+#U_T{
+	height: 256px;
+	width: 512px;
+	border-radius: 20px;
+	background-color: gray;
+	position: relative;
+	overflow: visible;/* 内嵌div浮动指令 */
+	transition: all 1s ease-in-out;
+}
+/* 用户-游客（内）*/
+.oo{
+	height: 256px;
+	width: 256px;
+	background-color: #bab296;
+	
+	position: absolute;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+/* 用户 */
+#U{
+	left: 0;
+	transition: all 1.5s ease-in-out;
+	cursor: pointer;/*点击效果*/
+	
+}
+.Uc{/* 边框圆角零件 */
+	border-radius: 20px 0 0 20px;
+}
+.U_clicked{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 60px;
+	width: 50px;
+}
+.Uc_clicked{
+	border-radius: 0 4px 4px 4px;
+}
+.Uh{
+	z-index: -1;
+}
+.Us{
+	height: 2.56px;
+	width: 2.56px;
+	transition: all 1.5s ease-in-out;
+}
+/* 游客 */
+#T{
+	right: 0;
+	transition: all 1.5s ease-in-out;
+	background-color: #bab296;
+	/* z-index: -1; */
+}
+
+	.Tc{/* 边框圆角零件 */
+			border-radius: 0 20px 20px 0;
+		}
+.Th{
+	z-index: -1;
+}
+.Ts{
+	height: 2.56px;
+	width: 2.56px;
+}
+
+.T_clicked{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	
+	height: 60px;
+	width: 50px;}
+
+.Tc_clicked{
+	border-radius: 4px 0 4px 4px;
+}
+
+/* .Tmmm{
+	height: 100vh;
+	background-color: red;
+} */
