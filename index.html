@@ -21,7 +21,7 @@
         }
     </style>
 </head>
-<内容>
+<body>
     <div class="container">
         <h1>欢迎来到我的网站！</h1>
         <p>这是一个最简单的网页示例，确保能够正常显示。</p>
@@ -36,12 +36,12 @@
 
     <script>
         // 简单的 JavaScript 显示当前时间
-        document.getElementById('time').textContent = 新建 日期().toLocaleString();
+        document.getElementById('time').textContent = new Date().toLocaleString();
         
         // 简单的交互效果
         document.querySelector('h1').addEventListener('click', function() {
             alert('欢迎点击！');
         });
     </script>
-</内容>
+</body>
 </html>
